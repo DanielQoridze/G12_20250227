@@ -1,6 +1,6 @@
 ﻿namespace G12_20250227
 {
-    class Book : Comparables
+    class Book : IComparables
     {
         public string Title { get; set; }
         public string Author { get; set; }
@@ -11,7 +11,7 @@
             return $"{Title} by {Author} ({Pages})";
         }
 
-        public override int CompareTo(object obj)
+        public int CompareTo(object obj)
         {
             if (obj is not Book book)
             {

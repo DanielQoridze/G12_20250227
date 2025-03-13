@@ -1,6 +1,6 @@
 ﻿namespace G12_20250227
 {
-    class Car : Comparables
+    class Car : IComparables
     {
         public string Make { get; set; }
         public string Model { get; set; }
@@ -11,7 +11,7 @@
             return $"{Year} {Make} {Model}";
         }
 
-        public override int CompareTo(object obj)
+        public int CompareTo(object obj)
         {
             if (obj is not Car car) 
             {

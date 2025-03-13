@@ -37,12 +37,12 @@
                 Console.WriteLine(cars[i]);
             }
 
-            Console.Clear();
+            //Console.Clear();
 
-            for (int i = 0; i < books.Length; i++)
-            {
-                Console.WriteLine(books[i]);
-            }
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine(books[i]);
+            //}
         }
     }
 }
